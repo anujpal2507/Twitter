@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<!-- define angular app -->
+<html ng-app="twitterApp">
+
+<head>
+    <!-- STYLESHEET -->
+    <link rel="stylesheet" href="font-awesome-4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/login.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/dash-profile.css">
+    <link rel="stylesheet" href="css/tweet.css">
+    <link rel="stylesheet" href="css/dash-suggest.css">
+
+    <!-- SCRIPTS -->
+
+
+    <script src="javascript/jquery.min.js"></script>
+    <script src="javascript/angular.min.js"></script>
+    <script src="javascript/angular-route.min.js"></script>
+    <script src="javascript/bootstrap.min.js"></script>
+    <script src="javascript/app.js"></script>
+    <script src="javascript/userLog.js"></script>
+    <script src="javascript/services.js"></script>
+    <script src="javascript/test.js"></script>
+    <script src="javascript/tweet.js"></script>
+    <title>Twitter</title>
+    <link rel="icon" type="image/x-icon" href="image/twitter.ico">
+</head>
+
+<!-- define angular controller -->
+<body ng-controller="mainController" >
+<div id="main">
+    <div ng-view></div>
+</div>
+</body>
+</html>

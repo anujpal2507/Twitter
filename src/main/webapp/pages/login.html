@@ -1,0 +1,63 @@
+<div id="logIn" class="" style="margin-top: 2%;margin-left: 60%"  >                                                             <!--login form-->
+    <form name="loginForm" class="form-inline" role="form" ng-submit="loginUser()">
+        <input id="user_id" name="username" type="email" class="form-control" ng-model="user_cred.username" required  placeholder="Email"> &nbsp;
+        <input id = "user_password" name="password" type="password" class="form-control" ng-model="user_cred.password" required  placeholder="Password"> &nbsp;
+        <input type="submit" class="btn btn-success" value="Log In">
+        <br/><br/>
+        {{message}}
+    </form>
+</div>
+<div class="container" style="width: 100%" >
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">                       <!--carousel-->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+            <li data-target="#myCarousel" data-slide-to="4"></li>
+            <li data-target="#myCarousel" data-slide-to="5"></li>
+            <li data-target="#myCarousel" data-slide-to="6"></li>
+            <li data-target="#myCarousel" data-slide-to="7"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox" >
+            <div class="item active"  >
+                <img src = "../image/home-page_01.jpg " alt="home-page_01" width="100%" height="100%" style="z-index: -10; opacity:0.8" >
+            </div>
+            <div class="item">
+                <img src = "../image/home-page_02.jpg " alt="home-page_02" width="100%" height="100%">
+            </div>
+            <div class="item">
+                <img src = "../image/home-page_03.jpeg " alt="home-page_03" width="100%" height="100%">
+            </div>
+            <div class="item">
+                <img src = "../image/home-page_04.jpg " alt="home-page_04" width="100%" height="100%">
+            </div>
+            <div class="item">
+                <img src = "../image/home-page_05.jpg " alt="home-page_05" width="100%" height="100%">
+            </div>
+            <div class="item">
+                <img src = "../image/home-page_06.jpg " alt="home-page_06" width="100%" height="100%">
+            </div>
+            <div class="item">
+                <img src = "../image/home-page_07.jpg " alt="home-page_07" width="100%" height="100%">
+            </div>
+            <div class="item">
+                <img src = "../image/home-page_08.jpg " alt="home-page_08" width="100%" height="100%">
+            </div>
+        </div>
+            <div id="signUp" class="right carousel-control" style="top :0%;margin-left: 60%;opacity: 1;z-index: 1000"  >         <!--signUp form-->
+                <form name="signUpForm" class="form-inline" role="form" ng-submit="signUpUser()">
+                    <fieldset>
+                        <legend>Sign Up</legend>
+                        <input type="text" class="form-control" placeholder="First Name" name="firstname" ng-model="user.firstname" required><br/><br/>
+                        <input type="text" class="form-control" placeholder="Last Name" name="lastname" ng-model="user.lastname" required><br/><br/>
+                        <input type="email" class="form-control" placeholder="Email" name="email" ng-model="user.email" required><br/><br/>
+                        <input type="password" class="form-control" placeholder="Password" name="password" ng-model="user.password" required><br/><br/>
+                        <!--<input type="password" class="form-control" placeholder="Confirm Password" name="confirmpassword" required><br/><br/>-->
+                        <input type="submit" class="form-control" value="Submit">
+                        <input type="button" class="form-control" value="Cancel" ng-click="cancel()">
+                    </fieldset>
+                </form>
+            </div>
+    </div>
+</div>

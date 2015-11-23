@@ -1,0 +1,70 @@
+<div>                                                                                   <!--navigation menu-->
+    <nav id="home_nav" class="navbar navbar-default ">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href=""><img id="logo" class="navbar-brand" src="../image/logo.jpg"></a>
+            </div>
+            <ul class="nav navbar-nav navbar-left">
+                <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
+                <li><a href="#Notifications"><i class="fa fa-bell"></i> Notifications</a></li>
+                <li><a href="#messages"><i class="fa fa-envelope-o"></i> Messages</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><div class="right-inner-addon">
+                    <i class="fa fa-search"></i>
+                    <input id="search" type="search" class="form-control" placeholder="Search Twitter" />
+                </div>
+                </li>
+                <a class="navbar-brand" href=""><img id="logo1" class="navbar-brand" src="../image/profile.gif"></a>
+                <li><input id="tweet-input" type="image" name="Tweet" src="../image/tweet.png" alt="Tweet"></li>
+            </ul>
+        </div>
+    </nav>
+</div>
+<div class="container" id="dash-background">                                                    <!--dashboard-->
+    <div class="row" >
+        <div class="col-md-3">
+            <div id="dash-profile">
+                <p id="email" >Hi {{name}}!</p>
+            </div>
+        </div>
+        <div class="col-md-6">
+           <div id="tweet-box">
+               <textarea id="tweet-txt" maxlength="140" placeholder="What's happening...? " ng-model="users.tweet"></textarea>
+               <p id="msg">Maximum 140 characters
+               <input id="tweet-btn" type="image" name="Tweet" src="../image/tweet.png" alt="Tweet" ng-click="tweeting()">
+           </div>
+           <div id="tweeted-box" ng-repeat="t in tweetlist">
+                <div id="tweeted-txt" >
+                  <div class="info">@{{t[1]}}</div>
+                  <div class="info">{{t[2]|date :'medium'}}</div>
+                    <hr>
+                  <div>{{t[3]}}</div>
+                </div>
+               <a href="#messages"><i class="fa fa-thumbs-o-up"></i></a>                                    <!--like button-->
+            </div>
+        </div>
+        <div class="col-md-3">                                                                              <!--twitter info-->
+            <div id="dash-suggest">
+                <p id="txt-sugest"><h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;Who in Twitter</h4></p>
+                <div id="follow" ng-repeat="users in nonfollowlist">
+                    <div id="nonfollow-username">
+                        {{users.name}}
+                    </div>
+                    <div id="followBtn" class="pull-right">
+                        <input class="btn btn-success" type="button" value="Follow" ng-click="follow(users.email)">
+                    </div>
+                </div>
+                <div id="following" ng-repeat="usr in folloinglist">
+                    <div id="follow-username">
+                        {{usr.name}}
+                    </div>
+                    <div id="unfollowBtn" class="pull-right">
+                        <input class="btn btn-info" type="button" value="UnFollow" ng-click="unfollow(usr.email)">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

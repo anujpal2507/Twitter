@@ -1,0 +1,55 @@
+#dash-suggest {
+    position: fixed;
+    top: 7%;
+    margin-top: 15px;
+    margin-right: 0px;
+    width: 250px;
+    height: 300px;
+    right: 7%;
+    border-color: #CEECF5;
+    border-radius: 10px;
+    border-style:solid;
+    border-width: 1px;
+    background-color: #ffffff;
+}
+#txt-suggest {
+    color: #8c8c8c;
+}
+#follow {
+    margin-left: 15px;
+    margin-top: 15px;
+    margin-right:50px;
+    width: 220px;
+    height: 30px;
+    border-color: #CEECF5;
+    border-radius: 10px;
+    border-style:solid;
+    border-width: 1px;
+    background-color: #ffffff;
+}
+#nonfollow-username{
+    width: 120px;
+    float: left;
+}
+#followBtn{
+    float: right;
+}
+#following {
+    margin-left: 15px;
+    margin-top: 15px;
+    margin-right:50px;
+    width: 220px;
+    height: 30px;
+    border-color: #CEECF5;
+    border-radius: 10px;
+    border-style:solid;
+    border-width: 1px;
+    background-color: #ffffff;
+}
+#follow-username{
+    width: 120px;
+    float: left;
+}
+#unfollowBtn{
+    float: right;
+}

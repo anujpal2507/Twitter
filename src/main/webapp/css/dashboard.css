@@ -1,0 +1,52 @@
+#logo {
+    position: absolute;
+    top: 0%;
+    background-color: #ffffff;
+    left: 50%;
+}
+#logo1 {
+    position: absolute;
+    top: 0%;
+    background-color: #ffffff;
+    left: 84%;
+    border-radius: 15px ;
+}
+#home_nav{
+    background-color: #ffffff;
+}
+.navibar-custom{
+    background-color: #ffffff;
+}
+.right-inner-addon {
+    position: fixed;
+    width: 13%;
+    right: 18%;
+    top: 1.5%;
+    height: 0.5%;
+}
+.right-inner-addon input {
+    padding-right: 20px;
+}
+.right-inner-addon i {
+    position: absolute;
+    right: 0px;
+    padding: 10px 12px;
+    pointer-events: none;
+}
+#search {
+    border-radius: 25px;
+}
+#tweet-input {
+    position: fixed;
+    top: 0.7%;
+    right:5% ;
+}
+#dash-background {
+    background-color:#EFF5FB ;
+    position: fixed;
+    top: 8%;
+    overflow-x:scroll;
+    overflow-y: scroll;
+    height: 100%;
+    width: 100%;
+}
