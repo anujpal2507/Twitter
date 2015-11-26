@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
+<<<<<<< HEAD
     <option name="DEFAULT_COMPILER" value="Javac" />
+=======
+>>>>>>> 567e617b039c7e01e851f8adfcc74ebc41ff0db9
     <resourceExtensions />
     <wildcardResourcePatterns>
       <entry name="!?*.java" />
@@ -30,5 +33,9 @@
       <module name="twitter" target="1.8" />
     </bytecodeTargetLevel>
   </component>
+<<<<<<< HEAD
 </project>
 
+=======
+</project>
+>>>>>>> 567e617b039c7e01e851f8adfcc74ebc41ff0db9

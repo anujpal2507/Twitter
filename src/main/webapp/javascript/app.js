@@ -1,5 +1,9 @@
 // create the module and name it twitterApp
+<<<<<<< HEAD
 var twitterApp = angular.module('twitterApp',['ngRoute','ngStorage']);
+=======
+var twitterApp = angular.module('twitterApp',['ngRoute']);
+>>>>>>> 567e617b039c7e01e851f8adfcc74ebc41ff0db9
 
 // configure routes
 twitterApp.config(function($routeProvider) {

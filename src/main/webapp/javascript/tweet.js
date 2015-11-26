@@ -2,7 +2,10 @@
 twitterApp.controller('tweet',function($scope,UserService,$http) {
     console.log("tweet controller");
     $scope.name=UserService.getName();
+<<<<<<< HEAD
    // console.log("My name is"+$scope.name);
+=======
+>>>>>>> 567e617b039c7e01e851f8adfcc74ebc41ff0db9
     console.log("In Dashboard");
     $http.post("/following")
         .then(function(response){

@@ -15,4 +15,8 @@ create table following(id serial, email varchar(40) not null, followinguser char
 
 Create third table "tweet"
 
+<<<<<<< HEAD
 create table tweet(id serial, email varchar(40) not null , tweets varchar(150) not null, tweeettimestamp timestamp);
+=======
+create table tweet(id serial, email varchar(40) not null , tweets varchar(150) not null, tweettimestamp timestamp);
+>>>>>>> 567e617b039c7e01e851f8adfcc74ebc41ff0db9

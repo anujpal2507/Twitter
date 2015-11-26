@@ -19,10 +19,15 @@ twitterApp.controller('mainController',function($scope, $http,$location,UserServ
         $http.post("/login",$scope.user_cred)
             .then(function(response) {
                 if(response.statusText=="OK"){
+<<<<<<< HEAD
                     UserService.setName(response.data.name);
                     console.log("check name"+response.data.name);
                 $location.path("/dashboard");
 
+=======
+                $location.path("/dashboard");
+                UserService.setName(response.data.name);
+>>>>>>> 567e617b039c7e01e851f8adfcc74ebc41ff0db9
                 }
             },function(response){
                 alert("Authentication Failed!!!!")
